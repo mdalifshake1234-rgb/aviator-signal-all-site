@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07101f">
+<title>AVIATOR SIGNAL ALL SITE</title>
+<style>
+:root{--bg:#070d18;--panel:#111b2e;--line:#173d69;--cyan:#ff334f;--blue:#a90925;--gold:#ffc857;--muted:#a8a8b5;--white:#fff5f6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -15%,#54101c 0,#09090d 48%);font-family:Arial,Helvetica,sans-serif;color:var(--white);min-height:100vh}
+.wrap{width:min(760px,100%);margin:auto;padding:18px 14px 40px}
+header{border:1px solid #9e1830;border-radius:20px;padding:20px 16px;text-align:center;background:#081426;box-shadow:0 0 24px #00cfff20}
+.brand{font-weight:900;letter-spacing:1.4px;color:#ff405b;font-size:clamp(22px,5vw,32px);text-shadow:0 0 16px #00d9ee55}
+.sub{color:#b9d5eb;font-size:12px;letter-spacing:2px;margin-top:7px}
+.hero{margin:16px 0;padding:26px 18px;border:1px solid #57202c;border-radius:18px;background:linear-gradient(120deg,#45101c,#160b10 70%);text-align:center}
+.hero .plane{font-size:52px}.hero h1{font-size:25px;margin:8px 0;color:white}.hero p{color:#b5c8df;margin:0}
+.card{background:linear-gradient(145deg,#121e33,#0d1728);border:1px solid #57202c;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 8px 28px #0005}
+h2{font-size:20px;color:#ff405b;margin:0 0 8px}.muted{color:var(--muted);font-size:14px;line-height:1.5}
+label{display:block;color:#aebed2;font-size:12px;letter-spacing:1px;margin:18px 0 8px}
+input{width:100%;padding:15px 14px;border-radius:12px;border:1px solid #602332;background:#0c090c;color:white;font-size:16px;outline:none}
+input:focus{border-color:#ff405b;box-shadow:0 0 0 3px #00d9ee18}
+button{border:0;border-radius:12px;padding:14px 18px;background:linear-gradient(100deg,#05cfe8,#078bd7);color:#04101c;font-weight:800;font-size:16px;cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}.full{width:100%;margin-top:14px}.secondary{background:#17263d;color:#d7e8fa;border:1px solid #355477}
+.gold{background:linear-gradient(100deg,#ffe16b,#f5a900);color:#251800}
+.hidden{display:none!important}.siteurl{word-break:break-all;color:#72dcff;background:#07101d;border:1px solid #602332;padding:12px;border-radius:10px}
+.packages{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.pkg{padding:16px 12px;border:1px solid #24456e;background:#160d12;border-radius:14px;text-align:left;color:white}
+.pkg strong{display:block;font-size:17px}.pkg span{display:block;color:#ff405b;font-size:22px;font-weight:900;margin-top:7px}.pkg.selected{border:2px solid var(--cyan);box-shadow:0 0 15px #00d9ee25}
+.note{padding:12px;border-radius:10px;background:#2b2411;border:1px solid #81651b;color:#ffe28a;font-size:13px;line-height:1.5;margin-top:14px}
+.payrow{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#080f1d;border:1px solid #273f60;padding:13px;border-radius:12px;margin-top:10px}
+.payrow b{color:#ff405b;font-size:18px;letter-spacing:1px}.copy{padding:9px 12px;font-size:13px;background:#23354e;color:#eaf5ff}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.stat{background:#160d12;border:1px solid #23446d;border-radius:12px;padding:15px}.stat small{color:var(--muted)}.stat strong{display:block;color:#ff405b;font-size:24px;margin-top:8px}
+footer{text-align:center;color:#71849d;font-size:12px;margin:22px 0}
+.steps{display:flex;gap:6px;margin:16px 0}.steps i{height:4px;flex:1;background:#23364f;border-radius:9px}.steps i.on{background:var(--cyan)}
+@media(max-width:430px){.packages{grid-template-columns:1fr 1fr}.card{padding:16px}.payrow b{font-size:16px}}
+@keyframes glow{0%,100%{box-shadow:0 0 10px #ff244433}50%{box-shadow:0 0 24px #ff244477}}.brand{animation:glow 3s infinite}.hero .plane{filter:drop-shadow(0 0 12px #ff334f);animation:float 3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-7px)}}button{background:linear-gradient(100deg,#ff5368,#a90925);color:#fff}.gold{background:linear-gradient(100deg,#ffe16b,#f5a900);color:#251800}</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="brand">✈ AVIATOR SIGNAL ALL SITE</div><div class="sub">MULTI-SITE SIGNAL PLATFORM</div></header>
+<div class="hero"><div class="plane">🛩️</div><h1>Find Your Aviator Site</h1><p>Enter a website link to continue</p></div>
+
+<div class="steps"><i class="on" id="s1"></i><i id="s2"></i><i id="s3"></i><i id="s4"></i><i id="s5"></i></div>
+
+<section class="card" id="pageStart">
+<h2>Welcome to AVIATOR SIGNAL</h2><p class="muted">Continue with an access code or purchase a package.</p>
+<button class="full" onclick="showPage('pageCode',1)">🔐 ENTER ACCESS CODE</button>
+<button class="full gold" onclick="showPage('pageFind',1)">♛ PACKAGE PURCHASE</button><p class="muted">Admin demo: open this page with <b>#admin</b> at the end of the URL.</p>
+</section>
+
+<section class="card" id="pageFind">
+<h2>⌕ Find Your Site</h2><p class="muted">Paste the Aviator website address below. No site is preselected.</p>
+<label>WEBSITE LINK</label><input id="siteInput" type="url" placeholder="https://example.com" autocomplete="url">
+<button class="full" onclick="findSite()">FIND SITE →</button>
+<p class="muted" id="findError" role="alert"></p>
+</section>
+
+<section class="card hidden" id="pageFound">
+<h2>✓ Website Found</h2><p class="muted">Please confirm this is the site you want to use.</p>
+<div class="siteurl" id="siteDisplay"></div>
+<div class="note">This checks the link format only. It does not verify the operator, safety, game provider, or whether the site offers Aviator.</div>
+<button class="full" onclick="showPage('pagePackages',2)">CONFIRM & NEXT →</button>
+<button class="full secondary" onclick="showPage('pageFind',1)">CHANGE LINK</button>
+</section>
+
+<section class="card hidden" id="pagePackages">
+<h2>♛ Choose Your Package</h2><p class="muted">Select one package to continue to payment details.</p>
+<div class="packages" id="packageGrid">
+<button class="pkg" onclick="choosePackage(this,'3 Hours','290')"><strong>3 Hours</strong><span>৳290</span></button>
+<button class="pkg" onclick="choosePackage(this,'6 Hours','500')"><strong>6 Hours</strong><span>৳500</span></button>
+<button class="pkg" onclick="choosePackage(this,'1 Day','1599')"><strong>1 Day</strong><span>৳1,599</span></button>
+<button class="pkg" onclick="choosePackage(this,'6 Days','6499')"><strong>6 Days</strong><span>৳6,499</span></button>
+<button class="pkg" style="grid-column:1/-1" onclick="choosePackage(this,'30 Days','32999')"><strong>30 Days</strong><span>৳32,999</span></button>
+</div>
+<button class="full" id="toPay" disabled onclick="showPage('pagePayment',3)">CONTINUE TO PAYMENT →</button>
+<button class="full secondary" onclick="showPage('pageFound',1)">← BACK</button>
+</section>
+
+<section class="card hidden" id="pagePayment">
+<h2>৳ Payment Details</h2><p class="muted">Selected package: <b id="selectedName"></b> — <b id="selectedPrice"></b></p>
+<div class="note">Personal number — Send Money. Before sending, carefully check the recipient name and number in your payment app. Never share your PIN or OTP.</div>
+<label>bKash Personal Number</label><div class="payrow"><b id="bkashNumber">01770741575</b><button class="copy" onclick="copyText('bkashNumber')">COPY</button></div>
+<label>Nagad Personal Number</label><div class="payrow"><b id="nagadNumber">01770741575</b><button class="copy" onclick="copyText('nagadNumber')">COPY</button></div>
+<label>TRANSACTION ID (TRXID)</label><input id="trx" placeholder="Enter transaction ID">
+<button class="full" onclick="submitTrx()">VERIFY & SUBMIT</button>
+<p class="muted" id="trxMessage"></p>
+<button class="full secondary" onclick="showPage('pagePackages',2)">← BACK</button>
+</section>
+
+<section class="card hidden" id="pageCode">
+<h2>🔐 Access Verification</h2><p class="muted">Payment confirmation-এর পর Admin থেকে পাওয়া access code দিন।</p>
+<label>ACCESS CODE</label><input id="accessCode" placeholder="Enter access code" autocomplete="off">
+<button class="full" onclick="verifyCode()">UNLOCK SIGNAL SITE →</button><p class="muted" id="codeMessage" role="alert"></p><button class="full secondary" onclick="showPage('pageStart',1)">← BACK</button><p class="muted">Demo note: এই access code HTML file-এ আছে; real website-এর জন্য server-side login লাগবে।</p>
+</section>
+
+<section class="card hidden" id="pageSignal">
+<h2>✦ Signal Dashboard</h2><p class="muted">Website selected:</p><div class="siteurl" id="signalSite"></div>
+<div class="note">স্বয়ংক্রিয় Estimate Generator: এটি কোনো Aviator live API বা game result পড়ছে না। প্রতিটি Estimate কেবল এলোমেলো/heuristic নমুনা—পরবর্তী Crash Point জানায় না এবং জয়ের নিশ্চয়তা দেয় না।</div>
+<div class="stats">
+<div class="stat"><small>Generator Status</small><strong id="generatorStatus">ACTIVE</strong></div>
+<div class="stat"><small>Auto Estimate</small><strong id="nextEstimate">--</strong></div>
+<div class="stat"><small>Next Refresh</small><strong id="refreshCountdown">60s</strong></div>
+<div class="stat"><small>Package</small><strong id="activePackage">—</strong></div>
+</div>
+<div class="card" style="margin-top:18px;background:#100b10"><h2>⚡ Automatic Estimate</h2><p class="muted">প্রতি ৬০ সেকেন্ডে নতুন নমুনা তৈরি হবে। এটিকে betting advice হিসেবে ব্যবহার করবেন না।</p><div class="siteurl" id="liveSignal">Generator চালু হচ্ছে...</div><h2 style="margin-top:18px">Recent Estimate History</h2><div id="estimateHistory" class="muted">এখনো কোনো estimate নেই।</div></div>
+<button class="full secondary" onclick="showPage('pageFind',1)">BACK TO HOME</button>
+</section>
+<section class="card hidden" id="pageAdmin">
+<h2>🛠 Admin Review (Demo)</h2><p class="muted">এই browser-এ জমা হওয়া payment request দেখা যাবে। বাস্তব verification নয়।</p>
+<label>ADMIN PIN (DEMO: 4400)</label><input id="reviewPin" type="password" placeholder="Admin PIN">
+<button class="full" onclick="loadRequests()">VIEW PAYMENT REQUESTS</button><div id="requestList" class="muted"></div>
+<button class="full secondary" onclick="showPage('pageStart',1)">BACK TO HOME</button>
+</section>
+<footer>AVIATOR SIGNAL ALL SITE · Automatic Estimate Prototype<br>Payment review ও access এখনো browser-local; live server/backend বা Aviator API সংযুক্ত নয়। Estimate কোনো real prediction নয়। Admin demo: add #admin to URL.</footer>
+</div>
+<script>
+let chosen=null, site='';
+function showPage(id,step){['pageStart','pageFind','pageFound','pagePackages','pagePayment','pageCode','pageSignal','pageAdmin'].forEach(x=>document.getElementById(x).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');[1,2,3,4,5].forEach(n=>document.getElementById('s'+n).classList.toggle('on',n<=step));window.scrollTo({top:0,behavior:'smooth'});}
+function findSite(){const raw=document.getElementById('siteInput').value.trim();const err=document.getElementById('findError');try{const u=new URL(raw);if(!['http:','https:'].includes(u.protocol))throw 0;site=u.href;document.getElementById('siteDisplay').textContent=site;err.textContent='';showPage('pageFound',1);}catch(e){err.textContent='Please enter a valid website link starting with https:// or http://';}}
+function choosePackage(el,name,price){document.querySelectorAll('.pkg').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');chosen={name,price};document.getElementById('toPay').disabled=false;document.getElementById('selectedName').textContent=name;document.getElementById('selectedPrice').textContent='৳'+Number(price).toLocaleString('en-US');}
+function copyText(id){const t=document.getElementById(id).textContent;if(t==='ADD YOUR NUMBER'){alert('Admin must add the verified payment number first.');return;}navigator.clipboard?.writeText(t).then(()=>alert('Number copied')).catch(()=>alert('Copy not available on this browser'));}
+function submitTrx(){const trx=document.getElementById('trx').value.trim();const msg=document.getElementById('trxMessage');if(!chosen){msg.textContent='Please select a package first.';return;}if(trx.length<5){msg.textContent='Please enter a valid transaction ID.';return;}const req={site,packageName:chosen.name,amount:chosen.price,method:'bKash/Nagad Personal',trx,submittedAt:new Date().toLocaleString(),status:'Pending'};const list=JSON.parse(localStorage.getItem('aviatorRequests')||'[]');list.push(req);localStorage.setItem('aviatorRequests',JSON.stringify(list));msg.textContent='আপনার TRX ID জমা হয়েছে। Payment এখন Pending Review. Admin টাকা যাচাই করে নিশ্চিত করলে access code দেবেন। এই demo-তে তথ্য শুধু এই browser-এ সংরক্ষিত হয়।';document.getElementById('trx').value='';}
+function verifyCode(){const c=document.getElementById('accessCode').value.trim();const m=document.getElementById('codeMessage');if(c==='AVAITOR440'){m.textContent='কোড গ্রহণ করা হয়েছে।';document.getElementById('signalSite').textContent=site||'Site not selected';document.getElementById('activePackage').textContent=chosen?chosen.name:'—';showPage('pageSignal',5);startEstimateGenerator();}else{m.textContent='ভুল কোড। সঠিক কোড দিন।';}}
+let estimateHistory=[];let refreshLeft=60;let estimateTimer=null;
+function generateEstimate(){const bands=['1.10x–1.40x','1.20x–1.80x','1.50x–2.00x','2.00x–3.00x'];const band=bands[Math.floor(Math.random()*bands.length)];const stamp=new Date().toLocaleTimeString();const item={band,stamp};estimateHistory.unshift(item);estimateHistory=estimateHistory.slice(0,6);const live=document.getElementById('liveSignal');if(live)live.textContent='Illustrative estimate: '+band+' · '+stamp+' · NOT LIVE DATA';const next=document.getElementById('nextEstimate');if(next)next.textContent=band;const hist=document.getElementById('estimateHistory');if(hist)hist.innerHTML=estimateHistory.map(x=>'<div class="payrow"><b>'+x.band+'</b><span>'+x.stamp+'</span></div>').join('');refreshLeft=60;}
+function startEstimateGenerator(){if(estimateTimer)return;generateEstimate();estimateTimer=setInterval(()=>{refreshLeft--;const c=document.getElementById('refreshCountdown');if(c)c.textContent=refreshLeft+'s';if(refreshLeft<=0)generateEstimate();},1000);}
+function loadRequests(){if(document.getElementById('reviewPin').value!=='4400'){document.getElementById('requestList').textContent='ভুল demo PIN।';return;}const arr=JSON.parse(localStorage.getItem('aviatorRequests')||'[]');const box=document.getElementById('requestList');if(!arr.length){box.textContent='কোনো payment request নেই।';return;}box.innerHTML=arr.map((r,i)=>`<div class="payrow" style="display:block"><b>Request #${i+1} — ${r.status}</b><p>Package: ${r.packageName} | Amount: ৳${r.amount}</p><p>TRX: ${r.trx}</p><p>Site: ${r.site}</p><p>Submitted: ${r.submittedAt}</p></div>`).join('');}
+function adminPublish(){if(document.getElementById('reviewPin').value!=='4400'){document.getElementById('adminSignalMsg').textContent='ভুল demo PIN।';return;}const v=document.getElementById('adminSignal').value.trim();if(!v){document.getElementById('adminSignalMsg').textContent='Signal লিখুন।';return;}localStorage.setItem('aviatorManualSignal',v);document.getElementById('adminSignalMsg').textContent='এই browser-এ signal save হয়েছে।';}
+if(location.hash==='#admin'){showPage('pageAdmin',5);}
+
+</script>
+</body></html>
